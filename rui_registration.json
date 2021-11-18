@@ -2,9 +2,9 @@
   "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
   "@id": "http://purl.org/ccf/1.5/1f522ea7-6290-4a47-84fc-6820ecad87f3",
   "@type": "SpatialEntity",
-  "creator": "k k",
-  "creator_first_name": "k",
-  "creator_last_name": "k",
+  "creator": "Amos Burton",
+  "creator_first_name": "Amos",
+  "creator_last_name": "Burton",
   "creation_date": "2021-10-31",
   "ccf_annotations": [
     "http://purl.obolibrary.org/obo/UBERON_0002015",
