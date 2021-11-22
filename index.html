@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Companion Website for "Tissue Registration and Exploration User Interfaces in Support of a Human Reference
+        Atlas "</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        hr {
+            border: none;
+            border-top: thin solid;
+            background-color: rgb(66, 66, 66);
+        }
+
+        ul.no-bullets {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        h1 {
+            margin-top: 30px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+    <script>
+        showIframe = function (id, url) {
+            var iframe = document.getElementById(id);
+            iframe.src = url;
+            iframe.height = 600;
+            var p = document.getElementById(id + "-message");
+            if (p) {
+                p.classList.remove("hidden")
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <p></p>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h1>Companion Website for “Tissue Registration and Exploration User Interfaces in Support of a Human
+                    Reference Atlas ”</h1>
+                <p></p>
+                <p>Katy Börner<sup>1*</sup>, Andreas Bueckle<sup>1*</sup>, Bruce W. Herr II<sup>1</sup>, Leonard E.
+                    Cross<sup>1</sup>, Ellen M. Quardokus<sup>1</sup>,
+                    Elizabeth G. Record<sup>1</sup>, Yingnan Ju<sup>1</sup>, Jonathan C. Silverstein<sup>2</sup>,
+                    Kristen M. Browne<sup>3</sup>, Sanjay Jain <sup>4</sup>, Clive H. Wasserfall<sup>5</sup>, Marda L.
+                    Jorgensen<sup>5</sup>, Jeffrey M. Spraggins<sup>6</sup>, Nathan H. Patterson<sup>6</sup>, Griffin M.
+                    Weber<sup>7</sup>
+                </p>
+
+                <ul class="no-bullets">
+                    <li><sup>1</sup> Department of Intelligent Systems Engineering, Luddy School of Informatics,
+                        Computing, and
+                        Engineering, Indiana University, Bloomington, Indiana, USA</li>
+                    <li><sup>2</sup> Department of Biomedical Informatics, University of Pittsburgh School of Medicine,
+                        Pittsburgh,
+                        Pennsylvania, USA</li>
+                    <li><sup>3</sup> Department of Health and Human Services, National Institute of Allergy and
+                        Infectious
+                        Diseases,
+                        The National Institutes of Health, Bethesda, Maryland, USA</li>
+                    <li><sup>4</sup> Department of Medicine, Washington University School of Medicine, Saint Louis,
+                        Missouri, USA
+                    </li>
+                    <li><sup>5</sup> Departments of Pathology and Pediatrics, University of Florida, Gainesville,
+                        Florida, USA</li>
+                    <li><sup>6</sup> Mass Spectrometry Research Center, Vanderbilt University, Nashville, Tennessee, USA
+                    </li>
+                    <li><sup>7</sup> Department of Biomedical Informatics, Harvard Medical School, Boston,
+                        Massachusetts, USA</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+
+        <div class="row">
+            <div class="col">
+                <p> <a target="_blank" href="#">Link to
+                        preprint on
+                        bioRxiv</a></p>
+                <p><a target="_blank" href="https://github.com/cns-iu/HRA-supporting-information">Link to code on GitHub</a></p>
+            </div>
+        </div>
+        <hr>
+
+        <div class="row">
+            <div class="col">
+                <h4>Exploration User Interface (EUI)</h4>
+                <p>All tissue datasets used in this study can be explored in their three-dimensional size, position, and
+                    rotation in the context of the Human Reference Atlas. Using the Exploration User Interface (EUI),
+                    you can:</p>
+                <ul>
+                    <li><b>Select an organ</b>: One can navigate available organs by selecting them from the carousel
+                        above the
+                        stage
+                        or using the ontology on the left.</li>
+                    <li><b>Filter</b>: Above the Search is the Filter icon which opens a flyout with many options (e.g.
+                        Sex, Assay
+                        Types, etc) for refining what tissue data is presented.</li>
+                    <li> <b>Registered Blocks</b>: It is possible to select a block of tissue samples either using the
+                        bodies on
+                        stage or the cards in the right column. Color coding helps to identify different selections.
+                    </li>
+                    <li><b>Data</b>: Using the cards in the right column, click on items to dig deeper into the data.
+                        <b>You can
+                            watch a tutorial on how to use the EUI <a target="_blank"
+                                href="https://www.youtube.com/watch?v=YAHJqvD3Q_8">here</a></b>.
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <p><a target="_blank" href="https://portal.hubmapconsortium.org/ccf-eui">External link to
+                        EUI web component</a></p>
+                <button type="button" class="btn btn-primary"
+                    onClick="showIframe('eui', 'https://portal.hubmapconsortium.org/ccf-eui')">Load</button>
+                <span id="eui-message" class="hidden">Please visit <a target="_blank"
+                        href="https://portal.hubmapconsortium.org/ccf-eui">https://portal.hubmapconsortium.org/ccf-eui</a>
+                    to explore the tissue blocks in a separate tab.
+                </span>
+                <iframe id="eui" width="100%" height="395" src="thumbnails/eui__preview.jpg" frameborder="0"></iframe>
+
+            </div>
+        </div>
+        <hr>
+          <div class="row">
+              <div class="col">
+                  <h4>Human Reference Atlas (HRA) Dashboard</h4>
+                  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                      nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                      in culpa qui officia deserunt mollit anim id est laborum.</p>
+                 
+
+              </div>
+          </div>
+
+          <div class="row">
+              <div class="col-12">
+                  <p><a target="_blank" href="https://hubmapconsortium.github.io/hra-data-dashboard/">External link to
+                          HRA dashboard</a></p>
+                  <button type="button" class="btn btn-primary"
+                      onClick="showIframe('hra',
+                      'https://hubmapconsortium.github.io/hra-data-dashboard/')">Load</button>
+                  <span id="hra-message" class="hidden">Please visit <a target="_blank"
+                          href="https://hubmapconsortium.github.io/hra-data-dashboard/">https://hubmapconsortium.github.io/hra-data-dashboard/</a>
+                      to explore the dashboard in a separate tab.
+                  </span>
+                  <iframe id="hra" width="100%" height="395" src="thumbnails/hra_preview.jpg" frameborder="0"></iframe>
+
+              </div>
+          </div>
+          <hr>
+</body>
+
+</html>
