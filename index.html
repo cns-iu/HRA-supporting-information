@@ -33,6 +33,10 @@
         .hidden {
             display: none;
         }
+
+        model-viewer-div {
+            height: 400px;
+        }
     </style>
     <script>
         showIframe = function (id, url) {
@@ -45,6 +49,8 @@
             }
         }
     </script>
+    <!-- Import the <model-viewer> component -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
 
 <body>
@@ -95,7 +101,8 @@
                 <p> <a target="_blank" href="#">Link to
                         preprint on
                         bioRxiv</a></p>
-                <p><a target="_blank" href="https://github.com/cns-iu/HRA-supporting-information">Link to code on GitHub</a></p>
+                <p><a target="_blank" href="https://github.com/cns-iu/HRA-supporting-information">Link to code on
+                        GitHub</a></p>
             </div>
         </div>
         <hr>
@@ -143,35 +150,77 @@
             </div>
         </div>
         <hr>
-          <div class="row">
-              <div class="col">
-                  <h4>Human Reference Atlas (HRA) Dashboard</h4>
-                  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                      nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-                      in culpa qui officia deserunt mollit anim id est laborum.</p>
-                 
 
-              </div>
-          </div>
+        <div class="row">
+            <div class="col">
+                <h4>Human Reference Atlas (HRA) Dashboard</h4>
+                <div class="bg-warning">
+                    <p><b>Note</b>: This dashboard only shows <b>published</b> data. The amount of tissue blocks
+                        and
+                        tissue sections shown may differ from the amount registered in the HuBMAP ecosystem but now
+                        published yet.</p>
+                </div>
 
-          <div class="row">
-              <div class="col-12">
-                  <p><a target="_blank" href="https://hubmapconsortium.github.io/hra-data-dashboard/">External link to
-                          HRA dashboard</a></p>
-                  <button type="button" class="btn btn-primary"
-                      onClick="showIframe('hra',
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                    in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <p><a target="_blank" href="https://hubmapconsortium.github.io/hra-data-dashboard/">External link to
+                        HRA dashboard</a></p>
+                <button type="button" class="btn btn-primary" onClick="showIframe('hra',
                       'https://hubmapconsortium.github.io/hra-data-dashboard/')">Load</button>
-                  <span id="hra-message" class="hidden">Please visit <a target="_blank"
-                          href="https://hubmapconsortium.github.io/hra-data-dashboard/">https://hubmapconsortium.github.io/hra-data-dashboard/</a>
-                      to explore the dashboard in a separate tab.
-                  </span>
-                  <iframe id="hra" width="100%" height="395" src="thumbnails/hra_preview.jpg" frameborder="0"></iframe>
+                <span id="hra-message" class="hidden">Please visit <a target="_blank"
+                        href="https://hubmapconsortium.github.io/hra-data-dashboard/">https://hubmapconsortium.github.io/hra-data-dashboard/</a>
+                    to explore the dashboard in a separate tab.
+                </span>
+                <iframe id="hra" width="100%" height="395" src="thumbnails/hra_preview.jpg" frameborder="0"></iframe>
 
-              </div>
-          </div>
-          <hr>
+            </div>
+        </div>
+        <hr>
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <model-viewer class="model-viewer-div" alt="The Visible Human kidney, male, left"
+                        src="models/VH_M_Kidney_Left.glb" ar ar-modes="webxr scene-viewer quick-look"
+                        shadow-intensity="1" camera-controls auto-rotate style="height: 400px;">
+                    </model-viewer>
+                </div>
+                <div class="col">
+                    <model-viewer class="model-viewer-div" alt="The Visible Human heart, female"
+                        src="models/VH_F_Heart.glb" ar ar-modes="webxr scene-viewer quick-look" shadow-intensity="1"
+                        camera-controls auto-rotate style="height: 400px;">
+                    </model-viewer>
+                </div>
+                <p><i>The Visible Human kidney, left, male (left), and the heart, female (right). See the full 3D objects at <a target="_blank"
+                        href="https://hubmapconsortium.github.io/ccf/pages/ccf-3d-reference-library.html">https://hubmapconsortium.github.io/ccf/pages/ccf-3d-reference-library.html</a>
+                    .</i></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <h4>Exemplary CCF-HRA 3D Models</h4>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                    in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>
+                    You can explore all the 3D models of the CCF-HRA at <a target="_blank"
+                        href="https://hubmapconsortium.github.io/ccf/pages/ccf-3d-reference-library.html">https://hubmapconsortium.github.io/ccf/pages/ccf-3d-reference-library.html</a>
+                </p>
+            </div>
+        </div>
 </body>
 
 </html>
