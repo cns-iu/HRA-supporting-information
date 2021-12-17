@@ -100,7 +100,7 @@
             <div class="col">
                 <p> <a target="_blank" href="#">Link to
                         preprint on
-                        bioRxiv</a></p>
+                        bioRxiv (coming soon)</a></p>
                 <p><a target="_blank" href="https://github.com/cns-iu/HRA-supporting-information">Link to code on
                         GitHub</a></p>
             </div>
@@ -118,9 +118,8 @@
                         above the
                         stage
                         or using the ontology on the left.</li>
-                    <li><b>Filter</b>: Above the Search is the Filter icon which opens a flyout with many options (e.g.
-                        Sex, Assay
-                        Types, etc) for refining what tissue data is presented.</li>
+                    <li><b>Filter</b>: Above the Search is the Filter icon which opens a flyout with many options (e.g.,
+                        Sex, Assay Types, etc.) for refining what tissue data is presented.</li>
                     <li> <b>Registered Blocks</b>: It is possible to select a block of tissue samples either using the
                         bodies on
                         stage or the cards in the right column. Color coding helps to identify different selections.
@@ -154,18 +153,18 @@
         <div class="row">
             <div class="col">
                 <h4>Human Reference Atlas (HRA) Dashboard</h4>
-                <div class="bg-warning">
-                    <p><b>Note</b>: This dashboard only shows <b>published</b> data. The amount of tissue blocks
-                        and
-                        tissue sections shown may differ from the amount registered in the HuBMAP ecosystem but now
-                        published yet.</p>
-                </div>
 
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-                    in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p><b>Note</b>: This dashboard only shows <b>published</b> data. The amount of tissue blocks
+                    and
+                    tissue sections shown may differ from the amount registered in the HuBMAP ecosystem but now
+                    published yet.</p>
+
+
+                <p> The HRA Dashboard displays the number of tissue blocks, tissue sections, and RUI locations per organ
+                    and tissue
+                    provider for HuBMAP data. This is an interactive visualization for all public HuBMAP data. Note that
+                    EUI
+                    counts are higher as data by SPARC, GTEx, and other consortia are included.</p>
 
 
             </div>
@@ -187,39 +186,48 @@
         </div>
         <hr>
 
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <model-viewer class="model-viewer-div" alt="The Visible Human kidney, male, left"
-                        src="models/VH_M_Kidney_Left.glb" shadow-intensity="1" camera-controls auto-rotate
-                        style="height: 400px;">
-                    </model-viewer>
-                </div>
-                <div class="col">
-                    <model-viewer class="model-viewer-div" alt="The Visible Human heart, female"
-                        src="models/VH_F_Heart.glb" shadow-intensity="1" camera-controls auto-rotate
-                        style="height: 400px;">
-                    </model-viewer>
-                </div>
-                <p><i>The Visible Human kidney, left, male (left), and the heart, female (right). See the full 3D
-                        objects at <a target="_blank"
-                            href="https://hubmapconsortium.github.io/ccf/pages/ccf-3d-reference-library.html">https://hubmapconsortium.github.io/ccf/pages/ccf-3d-reference-library.html</a>
-                        .</i></p>
-            </div>
-        </div>
 
         <div class="row">
             <div class="col-12">
                 <h4>Exemplary CCF-HRA 3D Models</h4>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-                    in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p> The CCF 3D Reference Object Library provides anatomically correct reference organs. The organs are
+                    developed by a specialist in 3D medical illustration and approved by organ experts.</p>
+
+                <p>Initially, reference objects are created using data from the Visible Human male and female datasets
+                    provided by the National Library of Medicine. The male dataset comprises 1,871 cross-sections at 1mm
+                    intervals for both CT and anatomical images at a resolution of 4,096 pixels by 2,700 pixels. The
+                    female data set has the same characteristics as the Visible Human Male but axial anatomical images
+                    were obtained at 0.33 mm intervals resulting in 5,189 cross-section anatomical images. The male was
+                    white, 180.3 cm (71 inch) tall, 199-pound and was 38 years old. The female was white, 171.2 cm (67.4
+                    inch) tall, obese, and 59 years old.</p>
+
+                <p>On March 12, 2021, a total of 11 reference organs became available in GLB format. Each organ can be
+                    viewed and explored using free web browsers such as <a href="https://sandbox.babylonjs.com/"
+                        target="_blank">Babylon.js.</a>
+                </p>
                 <p>
                     You can explore all the 3D models of the CCF-HRA at <a target="_blank"
                         href="https://hubmapconsortium.github.io/ccf/pages/ccf-3d-reference-library.html">https://hubmapconsortium.github.io/ccf/pages/ccf-3d-reference-library.html</a>
                 </p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <model-viewer class="model-viewer-div" alt="The Visible Human kidney, male, left"
+                                src="models/VH_M_Kidney_Left.glb" shadow-intensity="1" camera-controls auto-rotate
+                                style="height: 400px;">
+                            </model-viewer>
+                        </div>
+                        <div class="col">
+                            <model-viewer class="model-viewer-div" alt="The Visible Human heart, female"
+                                src="models/VH_F_Heart.glb" shadow-intensity="1" camera-controls auto-rotate
+                                style="height: 400px;">
+                            </model-viewer>
+                        </div>
+                        <p><i>The Visible Human kidney, left, male (left), and the heart, female (right).</i></p>
+                    </div>
+                </div>
+
+
             </div>
         </div>
 </body>
